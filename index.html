@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+    <style>
+        *{
+            box-sizing: border-box;
+            margin: 0;
+        }
+
+        body{
+            background-color: white;
+            position: relative;
+            height: 100vh;
+        }
+
+        form{
+            font-family: Arial, Helvetica, sans-serif;
+            font-size: 14px;
+            position: absolute;
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%, -50%);
+            background-color: white;
+            width: 60%;
+            margin: auto;
+            padding: 50px;
+            border-radius: 20px;
+            box-shadow: 2px -2px 66px -11px rgba(0,0,0,0.49);
+            -webkit-box-shadow: 2px -2px 66px -11px rgba(0,0,0,0.49);
+            -moz-box-shadow: 2px -2px 66px -11px rgba(0,0,0,0.49);
+
+            
+        }
+
+        .input_wrap{
+            margin: 20px 0;
+        }
+
+        .input_wrap label, .input_wrap input{
+            display: block;
+        } 
+
+        .input_wrap input{
+            width: 100%;
+            background-color: rgb(247, 247, 247);
+            border: 0;
+            height: 35px;
+            outline: none;
+            margin-top: 8px;
+        }
+
+        .input_wrap [type="submit"]{
+            background-color: rgb(50, 50, 131);
+            color: white;
+            font-size: 16px;
+            width: auto;
+            padding: 10px 50px;
+            cursor: pointer;
+           
+        }
+
+    </style>
+</head>
+<body>
+    <form action="generate_php.php" method="post">
+        <div class="input_wrap">
+             <label for="">Numéro</label>
+             <input type="number" name="numero" id="">
+        </div>
+        <div class="input_wrap">
+            <label for="">Nom</label>
+            <input type="text" name="nom" id="">
+       </div>
+       <div class="input_wrap">
+            <label for="">Prénom</label>
+            <input type="text" name="prenom" id="">
+       </div>
+    <div class="input_wrap">
+        <label for="">E-mail</label>
+        <input type="email" name="email" id="">
+    </div>
+    <div class="input_wrap center">
+        <input type="submit" value="Valider">
+   </div>
+    </form>
+</body>
+</html>
